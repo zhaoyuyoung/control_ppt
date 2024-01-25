@@ -3,4 +3,4 @@ mod 'puppetlabs/stdlib'
 mod 'puppetlabs/concat'
 mod 'puppetlabs/translate'
 mode 'samuelson/dockeragent'
-mode 'puppetlabs/docker
+mode 'puppetlabs/docker'
