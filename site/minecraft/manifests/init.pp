@@ -1,10 +1,11 @@
 class minecraft {
+  $url = 'https://launcher.mojang.com/mc/game/1.12.2/server/886945bfb2b978778c3a0288fd7fab09d315b25f/server.jar'
   file {'/opt/minecraft':
     ensure => directory,
   }
   file {'/opt/minecraft/minecraft_server.jar':
     ensure => file,
-    source => 'https://launcher.mojang.com/mc/game/1.12.2/server/886945bfb2b978778c3a0288fd7fab09d315b25f/server.jar',
+    source => $url,
     before => Servie['minecraft'],
   }
   package {'java':
