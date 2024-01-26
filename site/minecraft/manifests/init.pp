@@ -14,8 +14,8 @@ class minecraft {
     content => 'eula=ture',
   }
   file {'/etc/systemd/system/mindcraft.service':
-    ensure => file
-    source => 'puppet:///modules/minecraft/minecraft.service',
+    ensure => file,
+    source => 'puppet:///modules/minecraft/minecraft.service',    
   }
   service {'minecraft':
     ensure => 'running',
